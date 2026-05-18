@@ -17,12 +17,13 @@
 }
 html{
     scroll-behavior: smooth;
-
+    overflow-x: hidden;
 }
 body {
     background-color: var(--body-color);
     color: var(--text-color);
     font-family: var(--font-raleway);
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     width: 3.5px;
@@ -1563,7 +1564,7 @@ font-size: 16px;
 /* Quote Box */
 .coach-image-quote {
     position: absolute;
-    bottom: -16px; /* More outside */
+    bottom: 2px; /* More outside */
     right: 0px;
     background-color: #1A140F;
     padding: 16px 36px;
@@ -2442,4 +2443,29 @@ font-size: 40px;
     .btn-submit-form {
         font-size: 18px;
     }
+}
+
+/* Premium Scroll Reveal Animation Styles (Cinematic Zoom-Out Reveal) */
+.scroll-reveal {
+    opacity: 0;
+    transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transition: opacity 1.25s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 1.25s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 1.25s cubic-bezier(0.16, 1, 0.3, 1);
+    -webkit-transition: opacity 1.25s cubic-bezier(0.16, 1, 0.3, 1),
+                        -webkit-transform 1.25s cubic-bezier(0.16, 1, 0.3, 1),
+                        -webkit-filter 1.25s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity, filter;
+    overflow: hidden; /* Prevent scaling from creating horizontal scroll overflow */
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    filter: blur(0);
+    -webkit-filter: blur(0);
 }

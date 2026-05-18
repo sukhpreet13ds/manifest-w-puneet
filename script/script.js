@@ -156,3 +156,46 @@ if (mobileMenuOverlay) {
 mobileMenuLinks.forEach(link => {
     link.addEventListener('click', closeMobileMenu);
 });
+
+// Scroll Reveal Animation with Intersection Observer
+document.addEventListener('DOMContentLoaded', () => {
+    const revealTargets = document.querySelectorAll(
+        '.hero-container, .work-container, .surface-container, .alignment-container, .offer-container, .qualify-container, .clients-container, .about-coach-container, .testimonials-container, .apply-container, .footer-container'
+    );
+    
+    // Fallback for browsers that don't support IntersectionObserver
+    if (!('IntersectionObserver' in window)) {
+        revealTargets.forEach(el => {
+            el.classList.add('revealed');
+        });
+        return;
+    }
+    
+    const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target); // Stop observing once revealed
+            }
+        });
+    };
+    
+    const revealObserver = new IntersectionObserver(revealCallback, {
+        root: null, // Default is viewport
+        threshold: 0.08, // Trigger early at 8% visibility for smooth entry flow
+        rootMargin: '0px 0px -40px 0px' // Offset slightly to trigger naturally as user scrolls
+    });
+    
+    revealTargets.forEach(el => {
+        el.classList.add('scroll-reveal');
+        
+        // If it's the hero container, reveal it immediately on load so the user sees it without lag
+        if (el.classList.contains('hero-container')) {
+            setTimeout(() => {
+                el.classList.add('revealed');
+            }, 50);
+        } else {
+            revealObserver.observe(el);
+        }
+    });
+});
