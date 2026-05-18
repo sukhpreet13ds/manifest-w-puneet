@@ -17,7 +17,7 @@
     <nav class="mwp-nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <img src="assets/menifest-logo.png" alt="Manifest with Puneet">
+                <img src="assets/menifest-logo.png" alt="Manifest with Puneet" class="logo">
             </a>
             <ul class="nav-links">
                 <li><a href="#about">ABOUT</a></li>
@@ -26,12 +26,40 @@
                 <li><a href="#who">WHO IT'S FOR</a></li>
             </ul>
             <div class="nav-cta">
-                <button class="btn-apply-nav">
-                    <span>⟡˖ APPLY NOW</span>
-                </button>
+                <a href="#apply">
+                    <button class="btn-apply-nav">
+                        <span>⟡˖ APPLY NOW</span>
+                    </button>
+                </a>
             </div>
+            
+            <!-- Burger Menu Button -->
+            <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars burger-bar"></i>
+            </button>
         </div>
     </nav>
+
+    <!-- Bottom Menu Panel Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Bottom Menu Panel -->
+    <div class="mobile-menu-panel" id="mobileMenuPanel">
+        <button class="mobile-menu-close" id="mobileMenuClose">&times;</button>
+        <ul class="mobile-menu-links">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#method">METHOD</a></li>
+            <li><a href="#offer">OFFER</a></li>
+            <li><a href="#who">WHO IT'S FOR</a></li>
+        </ul>
+        <div class="mobile-menu-cta">
+            <a href="#apply">
+                <button class="btn-apply-mobile-menu">
+                    <span>⟡˖ APPLY NOW</span>
+                </button>
+            </a>
+        </div>
+    </div>
 
 
     <main>
@@ -53,9 +81,11 @@
                     </div>
 
                     <div class="hero-actions">
-                        <button class="btn-primary">
-                            <span class="sparkle">⟡˖</span> APPLY FOR 1:1 COACHING
-                        </button>
+                        <a href="#apply">
+                            <button class="btn-primary">
+                                <span class="sparkle">⟡˖</span> APPLY FOR 1:1 COACHING
+                            </button>
+                        </a>
                         <p class="hero-subtext">Limited spots available each month</p>
                     </div>
                 </div>
@@ -131,7 +161,7 @@
                 </div>
             </div>
         </section>
-        <section class="mwp-work-section">
+        <section class="mwp-work-section" id="about">
             <div class="work-container">
                 <div class="work-left">
                     <img src="assets/left-work.png" alt="Puneet Work">
@@ -163,7 +193,7 @@
                 </div>
             </div>
         </section>
-   
+
         <section class="mwp-surface-section">
             <div class="surface-container">
                 <div class="surface-header">
@@ -176,7 +206,8 @@
                         This is not <span class="italic-accent">surface-level</span> manifestation.
                     </h2>
                     <p class="surface-subtitle">
-                        Inside this work, we don't just focus on thoughts — we work on your identity, emotional patterns, and self-concept.
+                        Inside this work, we don't just focus on thoughts — we work on your identity, emotional
+                        patterns, and self-concept.
                     </p>
                 </div>
 
@@ -188,7 +219,8 @@
                         </div>
                         <h3 class="card-title">Love & Relationships</h3>
                         <p class="card-desc">
-                            Build aligned, secure, and deeply fulfilling connections — not by chasing, but by becoming someone who naturally attracts and sustains them.
+                            Build aligned, secure, and deeply fulfilling connections — not by chasing, but by becoming
+                            someone who naturally attracts and sustains them.
                         </p>
                     </div>
 
@@ -199,7 +231,8 @@
                         </div>
                         <h3 class="card-title">Abundance & Wealth</h3>
                         <p class="card-desc">
-                            Shift your relationship with money from scarcity to sustainable financial flow — by rewiring the identity that has been quietly keeping it away.
+                            Shift your relationship with money from scarcity to sustainable financial flow — by rewiring
+                            the identity that has been quietly keeping it away.
                         </p>
                     </div>
 
@@ -210,7 +243,8 @@
                         </div>
                         <h3 class="card-title">Self-Worth & Identity</h3>
                         <p class="card-desc">
-                            Become the version of you who naturally receives — whose sense of worth doesn't waver with external circumstances or other people's opinions.
+                            Become the version of you who naturally receives — whose sense of worth doesn't waver with
+                            external circumstances or other people's opinions.
                         </p>
                     </div>
                 </div>
@@ -220,14 +254,15 @@
                 </div>
             </div>
         </section>
-         
-        <section class="mwp-alignment-section">
+
+        <section class="mwp-alignment-section" id="method">
             <div class="alignment-container">
                 <div class="alignment-left">
                     <div class="alignment-header">
                         <p class="methodology-label">The Methodology</p>
                         <h2 class="alignment-title">The Inner <span class="italic-accent">Alignment</span> Method™</h2>
-                        <p class="alignment-subtitle">A structured 5-phase process designed to create lasting internal and external shifts — not temporary highs.</p>
+                        <p class="alignment-subtitle">A structured 5-phase process designed to create lasting internal
+                            and external shifts — not temporary highs.</p>
                     </div>
 
                     <div class="alignment-phases">
@@ -235,7 +270,8 @@
                             <span class="phase-number">01</span>
                             <div class="phase-text">
                                 <h4 class="phase-name">Awareness</h4>
-                                <p class="phase-info">Uncover the subconscious patterns that are quietly running the show — the beliefs, stories, and emotional blueprints keeping you stuck.</p>
+                                <p class="phase-info">Uncover the subconscious patterns that are quietly running the
+                                    show — the beliefs, stories, and emotional blueprints keeping you stuck.</p>
                             </div>
                         </div>
 
@@ -243,7 +279,8 @@
                             <span class="phase-number">02</span>
                             <div class="phase-text">
                                 <h4 class="phase-name">Release</h4>
-                                <p class="phase-info">Dissolve the limiting beliefs at the root — not just manage them on the surface. Let go of what was never truly yours to carry.</p>
+                                <p class="phase-info">Dissolve the limiting beliefs at the root — not just manage them
+                                    on the surface. Let go of what was never truly yours to carry.</p>
                             </div>
                         </div>
 
@@ -251,7 +288,8 @@
                             <span class="phase-number">03</span>
                             <div class="phase-text">
                                 <h4 class="phase-name">Rewire</h4>
-                                <p class="phase-info">Build a new self-concept from the inside out — one that is aligned with who you are becoming and what you are ready to receive.</p>
+                                <p class="phase-info">Build a new self-concept from the inside out — one that is aligned
+                                    with who you are becoming and what you are ready to receive.</p>
                             </div>
                         </div>
 
@@ -259,7 +297,8 @@
                             <span class="phase-number">04</span>
                             <div class="phase-text">
                                 <h4 class="phase-name">Embodiment</h4>
-                                <p class="phase-info">Align your behavior, daily rituals, and emotional state with your new identity — so it becomes natural, not forced.</p>
+                                <p class="phase-info">Align your behavior, daily rituals, and emotional state with your
+                                    new identity — so it becomes natural, not forced.</p>
                             </div>
                         </div>
 
@@ -267,7 +306,9 @@
                             <span class="phase-number">05</span>
                             <div class="phase-text">
                                 <h4 class="phase-name">Manifestation</h4>
-                                <p class="phase-info">Your external reality begins to naturally reflect your internal shift — not as a result of effort, but as an inevitable expression of who you've become.</p>
+                                <p class="phase-info">Your external reality begins to naturally reflect your internal
+                                    shift — not as a result of effort, but as an inevitable expression of who you've
+                                    become.</p>
                             </div>
                         </div>
                     </div>
@@ -284,9 +325,381 @@
                 </div>
             </div>
         </section>
-       
+        <section class="mwp-offer-section" id="offer">
+            <div class="offer-container">
+                <div class="offer-left">
+                    <div class="offer-label">
+                        <span class="line"></span>
+                        <span class="label-text">THE OFFER</span>
+                    </div>
+                    <h2 class="offer-title">
+                        1:1 Coaching —<br>
+                        <span class="italic-accent">8 Session<br>Transformation</span>
+                    </h2>
+                    <div class="offer-description">
+                        <p>A private, structured journey designed to realign your inner world and shift your external
+                            reality. This is not a course. This is not group coaching. This is deep, personal, 1:1
+                            transformation work.</p>
+                    </div>
+                    <ul class="offer-features">
+                        <li>8 deep-dive private coaching sessions</li>
+                        <li>Personalized guidance based on your specific patterns</li>
+                        <li>Integration tools & practices between sessions</li>
+                        <li>Unlimited voice note support throughout</li>
+                        <li>Optional ongoing support add-on (premium)</li>
+                    </ul>
+                </div>
+
+                <div class="offer-right">
+                    <div class="offer-card">
+                        <h3 class="card-title">1:1 <span class="italic-accent">Transformation</span></h3>
+                        <p class="card-subtitle"><span class="offer-sparkle">⟡˖</span> 8 SESSIONS · PRIVATE · STRUCTURED
+                        </p>
+                        <ul class="card-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Full Inner Alignment Method™ journey</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Subconscious pattern work</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Identity & self-concept rewiring</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Personalised integration tools</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Voice note support between sessions</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Ongoing support option available</li>
+                        </ul>
+                        <a href="#apply" style="text-decoration: none;">
+                            <button class="btn-primary-dark">
+                                <span class="sparkle">⟡˖</span> APPLY FOR 1:1 COACHING
+                            </button>
+                        </a>
+                        <p class="card-note">Application-based — limited spots available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mwp-qualify-section" id="who">
+            <div class="qualify-container">
+                <div class="qualify-header">
+                    <div class="qualify-label">
+                        <span class="line"></span>
+                        <span class="label-text">QUALIFY YOURSELF</span>
+                    </div>
+                    <h2 class="qualify-title">Is This <span class="italic-accent">For You?</span></h2>
+                </div>
+
+                <div class="qualify-cards">
+                    <div class="qualify-card">
+                        <h3 class="q-card-title"><span class="q-icon">✦</span> <span class="italic-accent">This is for
+                                you if...</span></h3>
+                        <ul class="q-card-list">
+                            <li><span class="q-bullet">✦</span> You are self-aware but feel stuck in certain repeating
+                                patterns</li>
+                            <li><span class="q-bullet">✦</span> You are ready to take full responsibility for your life
+                                and reality</li>
+                            <li><span class="q-bullet">✦</span> You want depth and real transformation, not
+                                surface-level fixes</li>
+                            <li><span class="q-bullet">✦</span> You are willing to do consistent inner work with genuine
+                                commitment</li>
+                        </ul>
+                    </div>
+
+                    <div class="qualify-card not-for-you">
+                        <h3 class="q-card-title"><span class="q-icon">○</span> <span class="italic-accent">This is not
+                                for you if...</span></h3>
+                        <ul class="q-card-list">
+                            <li><span class="q-bullet">○</span> You are looking for instant results without doing
+                                internal work</li>
+                            <li><span class="q-bullet">○</span> You want quick hacks or shortcuts instead of real
+                                transformation</li>
+                            <li><span class="q-bullet">○</span> You are not willing to look at your own patterns
+                                honestly</li>
+                            <li><span class="q-bullet">○</span> You believe external changes alone will fix internal
+                                feelings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mwp-clients-section">
+            <div class="clients-container">
+                <div class="clients-header">
+                    <div class="clients-label">
+                        <span class="line"></span>
+                        <span class="label-text">WHAT BECOMES POSSIBLE</span>
+                    </div>
+                    <h2 class="clients-title">Clients often <span class="italic-accent">experience...</span></h2>
+                </div>
+
+                <div class="clients-grid-wrapper">
+                    <div class="client-box">
+                        <div class="client-icon">
+                            <img src="assets/client1.png" alt="Icon 1">
+                        </div>
+                        <h3 class="client-box-title">Secure, Aligned<br>Relationships</h3>
+                        <p class="client-box-desc">Attracting and sustaining connections that feel genuinely mutual,
+                            secure, and fulfilling — without chasing or performing.</p>
+                    </div>
+                    <div class="client-box">
+                        <div class="client-icon">
+                            <img src="assets/client2.png" alt="Icon 2">
+                        </div>
+                        <h3 class="client-box-title">Financial Stability<br>& Flow</h3>
+                        <p class="client-box-desc">Improved relationship with money — consistent flow, less anxiety, and
+                            the ability to receive and retain abundance.</p>
+                    </div>
+                    <div class="client-box">
+                        <div class="client-icon">
+                            <img src="assets/client3.png" alt="Icon 3">
+                        </div>
+                        <h3 class="client-box-title">Unshakeable<br>Self-Worth</h3>
+                        <p class="client-box-desc">A stronger, stable sense of identity and emotional independence that
+                            doesn't fluctuate based on others' opinions.</p>
+                    </div>
+                    <div class="client-box">
+                        <div class="client-icon">
+                            <img src="assets/client4.png" alt="Icon 4">
+                        </div>
+                        <h3 class="client-box-title">Clarity, Calm &<br>Certainty</h3>
+                        <p class="client-box-desc">A deeper sense of inner stillness, knowing, and direction — moving
+                            through life from a grounded, aligned place.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mwp-about-coach-section">
+            <div class="about-coach-container">
+                <div class="about-coach-left">
+                    <img src="assets/identity-left.png" alt="Puneet - Manifestation Coach">
+                    <div class="coach-image-quote">
+                        <span class="line"></span>
+                        <p>Your external reality<br>shifts when your internal<br>identity changes.</p>
+                    </div>
+                </div>
+                <div class="about-coach-right">
+                    <div class="coach-label">
+                        <span class="line"></span>
+                        <span class="label-text">ABOUT</span>
+                    </div>
+                    <h4 class="coach-greeting">Hi, I'm Puneet.</h4>
+                    <h2 class="coach-title">
+                        A Manifestation Coach<br>
+                        focused on <span class="italic-accent">identity<br>transformation.</span>
+                    </h2>
+                    <div class="coach-description">
+                        <p>My work is based on one core understanding: <strong>your external reality shifts when your
+                                internal identity changes.</strong> Not when you try harder. Not when you do more
+                            affirmations. When the version of you doing the manifesting fundamentally shifts.</p>
+                        <p>I've seen highly self-aware, genuinely capable people stay stuck — not because they lacked
+                            knowledge or effort, but because the work was happening at the surface level, not at the
+                            identity level. That's the gap I work in.</p>
+                        <p>My approach combines subconscious pattern work, self-concept rewiring, and embodied practice
+                            into a structured, private coaching container designed for real, lasting results.</p>
+                    </div>
+                    <a href="#apply">
+                        <button class="btn-coach-apply">
+                            <span class="sparkle">⟡˖</span> APPLY FOR 1:1 COACHING
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mwp-testimonials-section">
+            <div class="testimonials-container">
+                <div class="testimonials-header">
+                    <div class="testimonials-label">
+                        <span class="line"></span>
+                        <span class="label-text">TRANSFORMATION STORIES</span>
+                    </div>
+                    <h2 class="testimonials-title">Words of Those<br>Who <span class="italic-accent">Chose to
+                            Change</span></h2>
+                </div>
+
+                <div class="testimonials-slider-container">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <!-- Card 1 -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <span class="stars">★★★★★</span>
+                                <span class="quote-mark">”</span>
+                            </div>
+                            <p class="testimonial-text">"Working with Puneet completely shifted how I see myself. For
+                                the first time, I understood why I kept self-sabotaging — and I finally had the tools to
+                                stop."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">PK</div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Priya Rajan</h4>
+                                    <p class="author-role">Marketing Professional, Mumbai</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <span class="stars">★★★★★</span>
+                                <span class="quote-mark">”</span>
+                            </div>
+                            <p class="testimonial-text">"I came in skeptical about manifestation, but Puneet grounded
+                                everything in neuroscience. My anxiety reduced significantly within just three weeks of
+                                practice."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">AK</div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Aman Kapoor</h4>
+                                    <p class="author-role">Software Engineer, Bengaluru</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <span class="stars">★★★★★</span>
+                                <span class="quote-mark">”</span>
+                            </div>
+                            <p class="testimonial-text">"The clarity I gained was extraordinary. I stopped reacting from
+                                fear and started responding from awareness. The meditation practices she taught me are
+                                life-changing."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SM</div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Sunita Mehta</h4>
+                                    <p class="author-role">Educator & Mother, Delhi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 (Duplicate 1) -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <span class="stars">★★★★★</span>
+                                <span class="quote-mark">”</span>
+                            </div>
+                            <p class="testimonial-text">"Working with Puneet completely shifted how I see myself. For
+                                the first time, I understood why I kept self-sabotaging — and I finally had the tools to
+                                stop."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">PK</div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Priya Rajan</h4>
+                                    <p class="author-role">Marketing Professional, Mumbai</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 (Duplicate 2) -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <span class="stars">★★★★★</span>
+                                <span class="quote-mark">”</span>
+                            </div>
+                            <p class="testimonial-text">"I came in skeptical about manifestation, but Puneet grounded
+                                everything in neuroscience. My anxiety reduced significantly within just three weeks of
+                                practice."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">AK</div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Aman Kapoor</h4>
+                                    <p class="author-role">Software Engineer, Bengaluru</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 (Duplicate 3) -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <span class="stars">★★★★★</span>
+                                <span class="quote-mark">”</span>
+                            </div>
+                            <p class="testimonial-text">"The clarity I gained was extraordinary. I stopped reacting from
+                                fear and started responding from awareness. The meditation practices she taught me are
+                                life-changing."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SM</div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Sunita Mehta</h4>
+                                    <p class="author-role">Educator & Mother, Delhi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-dot active" data-index="0"></button>
+                    <button class="slider-dot" data-index="1"></button>
+                </div>
+            </div>
+        </section>
+        <section class="mwp-apply-form">
+            <div class="apply-container">
+                <div class="apply-left">
+                    <div class="apply-label">
+                        <span class="line"></span>
+                        <span class="label-text">THE ONLY QUESTION LEFT</span>
+                    </div>
+                    <h2 class="apply-title">You already know you're meant for <span class="italic-accent">more.</span>
+                    </h2>
+                    <p class="apply-desc">The only question is — are you ready to become the version of you who actually
+                        experiences it?</p>
+
+                </div>
+
+                <div class="apply-divider"></div>
+
+                <div class="apply-right" id="apply">
+                    <h2 class="form-title">Request a Discovery Session</h2>
+                    <p class="form-subtitle">COMPLIMENTARY CONSULTATION</p>
+                    <form class="discovery-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Whatsapp Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Area of Focus</option>
+                                <option value="Awareness">Awareness</option>
+                                <option value="Release">Release</option>
+                                <option value="Rewire">Rewire</option>
+                                <option value="Embodiment">Embodiment</option>
+                                <option value="Manifestation">Manifestation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="What do you hope to achieve with manifestation work ?" rows="4"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit-form">REQUEST YOUR SESSION</button>
+                        <p class="form-note">Your information is kept private and secure</p>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer class="mwp-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/menifest-logo.png" alt="Manifest with Puneet">
+            </div>
+            <ul class="footer-links">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#method">METHOD</a></li>
+                <li><a href="#offer">OFFER</a></li>
+                <li><a href="#who">WHO IT'S FOR</a></li>
+                <li><a href="#apply">APPLY</a></li>
+            </ul>
+            <div class="footer-copyright">
+                <p>Copyright © 2026 Manifest with Puneet.</p>
+            </div>
+        </div>
+    </footer>
 
 
 
